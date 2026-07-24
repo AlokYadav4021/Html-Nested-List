@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.one{
+    height: 30vh;
+    width: 100%;
+    background-color: red;
+}
+
+.two{
+    height: 30vh;
+    width: 50%;
+    background-color: blue;
+    float: left;
+}
+
+.three{
+    height: 30vh;
+    width: 50%;
+    background-color: blueviolet;
+    float: right;
+}
+
+.four{
+    height: 30vh;
+    width: 30%;
+    background-color: pink;
+    float: left;
+}
+
+.five{
+    height: 30vh;
+    width: 30%;
+    background-color: green;
+    float: left;
+}
+
+.six{
+    height: 30vh;
+    width: 30%;
+    background-color: grey;
+    float: right;
+}
+
+.seven{
+    height: 10vh;
+    width: 30%;
+    background-color: darkcyan;
+    clear: both;
+}
+
