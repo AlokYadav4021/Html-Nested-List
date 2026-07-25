@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.one{
+    background-color: #3a86ff;
+    height: 100vh;
+    width: 10%;
+    float: left;
+}
+
+.two{
+    background-color: #8338ec;
+    height: 10vh;
+    width: 90%;
+    float: left;
+}
+
+
+.three{
+    background-color: #ff006e;
+    height: 90vh;
+    width: 10%;
+    float: left;
+}
+
+.four{
+    background-color: #fb5607;
+    height: 10vh;
+    width: 80%;
+    float: left;
+}
+
+.five{
+    background-color: #ffbe0b;
+    height: 80vh;
+    width: 10%;
+    float: left;
+}
+
+.six{
+    background-color: #3c1518;
+    height: 10vh;
+    width: 70%;
+    float: left;
+}
+
+.seven{
+    background-color: #780116;
+    height: 70vh;
+    width: 10%;
+    float: left;
+}
+
+.eight{
+    background-color: #bd2d87;
+    height: 10vh;
+    width: 60%;
+    float: left;
+}
+
+.nine{
+    background-color: #139404;
+    height: 60vh;
+    width: 10%;
+    float: left;
+}
+
+.nine{
+    background-color: #139404;
+    height: 60vh;
+    width: 10%;
+    float: left;
+}
+
+
+.ten{
+    background-color: #1d1d1d;
+    height: 10vh;
+    width: 50%;
+    float: left;
+}
+
+.eleven{
+    background-color: #6761a8;
+    height: 50vh;
+    width: 10%;
+    float: left;
+}
+
+.twelve{
+    background-color: #009b72;
+    height: 10vh;
+    width: 40%;
+    float: left;
+}
+
+.thirteen{
+    background-color: #ed254e;
+    height: 40vh;
+    width: 10%;
+    float: left;
+}
+
+.fourteen{
+    background-color: #283618;
+    height: 10vh;
+    width: 30%;
+    float: left;
+}
+
+.fifteen{
+    background-color: #03045e;
+    height: 30vh;
+    width: 10%;
+    float: left;
+}
+
+.sixteen{
+    background-color: #5a189a;
+    height: 10vh;
+    width: 20%;
+    float: left;
+}
+
+.seventeen{
+    background-color: #02c39a;
+    height: 20vh;
+    width: 10%;
+    float: left;
+}
+
+.eighteen{
+    background-color: #fff200;
+    height: 10vh;
+    width: 10%;
+    float: left;
+}
+
+.ninteen{
+    background-color: #3c1642;
+    height: 10vh;
+    width: 5%;
+    float: left;
+}
+
+.twenty{
+    background-color: #282b28;
+    height: 5vh;
+    width: 5%;
+    float: left;
+}
+
+.twentyone{
+    background-color: #240046;
+    height: 5vh;
+    width: 2.5%;
+    float: left;
+}
+
+.twentytwo{
+    background-color: #0f4c5c;
+    height: 2.5vh;
+    width: 2.5%;
+    float: left;
+}
+
