@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.one{
+    display: inline-block;
+    margin: 0;
+}
+
+.line1 .white{
+    height: 12vh;
+    width: 12vw;
+    background-color: white;
+}
+
+.line1 .black{
+    height: 12vh;
+    width: 12vw;
+    background-color: black;
+}
+
+.two{
+    display: inline-block;
+    margin: 0;
+}
+
+.line2 .white{
+    height: 12vh;
+    width: 12vw;
+    background-color: white;
+}
+
+.line2 .black{
+    height: 12vh;
+    width: 12vw;
+    background-color: black;
+}
+
+
+.three{
+    display: inline-block;
+    margin: 0;
+}
+
+.line3 .white{
+    height: 12vh;
+    width: 12vw;
+    background-color: white;
+}
+
+.line3 .black{
+    height: 12vh;
+    width: 12vw;
+    background-color: black;
+}
+
+.four{
+    display: inline-block;
+    margin: 0;
+}
+
+.line4 .white{
+    height: 12vh;
+    width: 12vw;
+    background-color: white;
+}
+
+.line4 .black{
+    height: 12vh;
+    width: 12vw;
+    background-color: black;
+}
+
+.five{
+    display: inline-block;
+    margin: 0;
+}
+
+.line5 .white{
+    height: 12vh;
+    width: 12vw;
+    background-color: white;
+}
+
+.line5 .black{
+    height: 12vh;
+    width: 12vw;
+    background-color: black;
+}
+
+.six{
+    display: inline-block;
+    margin: 0;
+}
+
+.line6 .white{
+    height: 12vh;
+    width: 12vw;
+    background-color: white;
+}
+
+.line6 .black{
+    height: 12vh;
+    width: 12vw;
+    background-color: black;
+}
+
+.seven{
+    display: inline-block;
+    margin: 0;
+}
+
+.line7 .white{
+    height: 12vh;
+    width: 12vw;
+    background-color: white;
+}
+
+.line7 .black{
+    height: 12vh;
+    width: 12vw;
+    background-color: black;
+}
+
+.eight{
+    display: inline-block;
+    margin: 0;
+}
+
+.line8 .white{
+    height: 12vh;
+    width: 12vw;
+    background-color: white;
+}
+
+.line8 .black{
+    height: 12vh;
+    width: 12vw;
+    background-color: black;
+}
+
+
