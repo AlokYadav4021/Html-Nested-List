@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main {
+        width: 100%;
+        height: 100vh;
+        background-color: #8a1a1a;
+      }
+
+      .head {
+        height: 15vh;
+        width: 100%;
+        color: blue;
+        text-align: center;
+        background-color: orange;
+      }
+
+      .head h1 {
+        line-height: 15vh;
+      }
+
+      .nav {
+        height: 5vh;
+        width: 100%;
+        background-color: limegreen;
+        text-align: center;
+      }
+
+      .nav ul li {
+        display: inline-block;
+        margin-left: 25px;
+        line-height: 5vh;
+      }
+
+      .nav ul li a {
+        text-decoration: none;
+      }
+
+      .cont {
+        height: 70vh;
+        width: 100%;
+        background-color: #2b1111;
+      }
+
+      .cont > .left {
+        height: 100%;
+        width: 50%;
+        background-color: pink;
+        float: left;
+      }
+
+      .left > .up {
+        height: 50%;
+        width: 100%;
+        background-color: lightseagreen;
+      }
+
+      .up > form {
+        padding: 4px 0 0 7px;
+      }
+
+      .up form .Button {
+        margin: 10px 0 0 0;
+      }
+
+      .left > .down {
+        height: 50%;
+        width: 100%;
+        background-color: rgb(47, 32, 178);
+      }
+
+      .cont > .right {
+        height: 100%;
+        width: 50%;
+        background-color: darkorange;
+        float: right;
+      }
+
+      .foot {
+        height: 10vh;
+        width: 100%;
+        background-color: rgb(243, 6, 45);
+        padding: 0 10% 0 10%;
+        
+      }
+
+      .foot a{
+        padding-left: 30%;
+        line-height: 10vh;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="head">
+        <h1>Html Web Page</h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href=""> Home </a></li>
+          <li><a href=""> About </a></li>
+          <li><a href=""> Contact </a></li>
+          <li><a href=""> Help </a></li>
+        </ul>
+      </div>
+      <div class="cont">
+        <div class="left">
+          <div class="up">
+            <form action="">
+              <label for="">User name</label><br />
+              <input type="text" placeholder="Username" /><br />
+              <label for="">Password</label><br />
+              <input type="password" placeholder="Password" /><br />
+              <input class="Button" type="button" value="Submit" />
+            </form>
+          </div>
+          <div class="down"></div>
+        </div>
+        <div class="right">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
+            accusamus earum sapiente iusto culpa, repudiandae vero voluptate
+            quos aliquam dolore architecto a totam? Labore voluptatem veritatis
+            delectus commodi natus odit accusamus eveniet aut esse quo voluptate
+            deserunt, necessitatibus unde quia ducimus blanditiis impedit,
+            reprehenderit saepe nobis animi similique omnis. Expedita!
+          </p>
+        </div>
+      </div>
+      <div class="foot">
+        
+          <a href="">Email</a>
+          <a href="">Mobile</a>
+        
+      </div>
+    </div>
+  </body>
+</html>
