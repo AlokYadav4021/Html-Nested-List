@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=.main, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .top{
+            height: 40vh;
+            width: 100;
+            background-color: olive;
+        }
+
+        .bottom{
+            height:60vh;
+            width: 100;
+            background-color: rgb(131, 131, 126);
+        }
+
+        .box{
+            height: 50vh;
+            width: 45vw;
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 20vh;
+            left: 5vw;
+            z-index: 1;
+        }
+
+        .main > img {
+            height: 80vh;
+            width:50vw;
+            position: absolute;
+            top: 10vh;
+            right: 5vw;
+            z-index: 0;
+        }
+
+        .box > .one{
+            height: 40%;
+            width: 45%;
+            position: absolute;
+            top: 0px;
+            left: 1vw;
+            background-color: #fff;
+        }
+
+        .box > .two{
+            height: 40%;
+            width: 45%;
+            position: absolute;
+            top: 0px;
+            right: 1vw;
+            background-color: #fff;
+        }
+
+        .box > .three {
+            height: 40%;
+            width: 45%;
+            position: absolute;
+            bottom: 0px;
+            left: 1vw;
+            background-color: #fff;
+        }
+
+        .box > .four{
+            height: 40%;
+            width: 45%;
+            position: absolute;
+            bottom: 0px;
+            right: 1vw;
+            background-color: #fff;
+        }
+        h1{
+            padding: 1vh 0 0 1vw;
+            
+        }
+
+        p{
+            padding-left: 1vw;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="box">
+            <div class="one">
+                <h1>Reduces Stress</h1>
+                <p>Yoga includes deep breathing and relaxation.
+It helps calm your mind.
+It lowers stress and anxiety.
+You feel more peaceful and focused.</p>
+            </div>
+            <div class="two">
+                <h1>Improves Flexibil</h1>
+                <p>Yoga stretches your muscles and joints.
+It helps your body move more easily.
+Regular practice reduces stiffness.
+It also improves posture
+            </div>
+            <div class="three">
+                <h1>Increases Strength</h1>
+                <p>Many yoga poses strengthen muscles.
+It improves balance and stability.
+Strong muscles protect your joints.
+This helps you stay active and healthy.</p>
+            </div>
+            <div class="four">
+                <h1>Boosts Overall </h1>
+                <p>Yoga improves blood circulation.
+It supports better breathing and heart health.
+It increases energy levels.
+Regular yoga helps maintain a healthy .</p>
+            </div>
+        </div>
+         <img src="./output/yoga.jpeg">
+
+    </div>
+</body>
+</html>
