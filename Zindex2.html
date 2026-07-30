@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main {
+        height: 100vh;
+        width: 100%;
+        /* background-color: black; */
+      }
+
+      .one {
+        height: 40vh;
+        width: 50vw;
+        background-color: lightblue;
+      }
+
+      .two {
+        height: 35vh;
+        width: 40vw;
+        background-color: rgb(14, 14, 37);
+        position: absolute;
+        right: 0;
+        top: 15vh;
+      }
+      .main img {
+        height: 50vh;
+        width: 35vw;
+        position: absolute;
+        top: 10vh;
+        left: 30vw;
+      }
+
+      .three {
+        height: 35vh;
+        width: 35vw;
+        background-color: rgb(172, 119, 73);
+        position: absolute;
+        right: 15vw;
+        bottom: 20vh;
+      }
+
+      .three > .three_in {
+        height: 33vh;
+        width: 33vw;
+        border: 1px solid peachpuff;
+        margin: 1vh 0 0 1vw;
+        text-align: justify;
+      }
+
+      .three_in > h3 {
+        margin: 2vh 0 0 8vw;
+        font-size: x-large;
+        word-wrap: break-word;
+      }
+
+      .three_in > p {
+        margin: 2vh 3vw 0 3vw;
+        font-size: small;
+        word-wrap: break-word;
+        /* text-align: justify; */
+      }
+
+      .three_in p + p {
+        margin: 1vh 3vw 0 3vw;
+        font-size: small;
+        word-wrap: break-word;
+      }
+
+      .four {
+        height: 30vh;
+        width: 40vw;
+        /* background-color: red; */
+        position: absolute;
+        bottom: 5vh;
+        left: 2vw;
+        border-left: 8px solid rgb(172, 119, 73);
+      }
+
+      .four p{
+         margin: 4vh 3vw 0 3vw;
+        font-size: small;
+        word-wrap: break-word;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="one"></div>
+      <div class="two"></div>
+      <img src="./muhammad-faiz-zulkeflee-alw-CwGFmwQ-unsplash.jpg" alt="" />
+      <div class="three">
+        <div class="three_in">
+          <h3>Profetional Development</h3>
+
+          <p>
+            Sundar Pichai's professional development is a great example of
+            continuous learning and leadership. He started as an engineer and,
+            through dedication and innovation, became the CEO of Google and
+            Alphabet.
+          </p>
+          <p>Sundar Pichai</p>
+        </div>
+      </div>
+      <div class="four">
+        <p>
+          Professional development helps individuals build valuable skills and
+          improve their knowledge over time. It encourages continuous learning,
+          better decision-making, and career growth. Staying committed to
+          self-improvement leads to greater confidence and long-term success.
+        </p>
+        <p>Unknown</p>
+      </div>
+    </div>
+  </body>
+</html>
