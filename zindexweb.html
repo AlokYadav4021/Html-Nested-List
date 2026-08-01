@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zindex-web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main {
+        height: 400vh;
+        width: 100%;
+        /* background-color: red; */
+      }
+      .nav {
+        height: 5vh;
+        width: 100%;
+        background-color: #fff;
+      }
+
+      .nav > h1 {
+        position: absolute;
+        left: 2vh;
+        top: 2vh;
+        font-weight: bold;
+        font-size: large;
+      }
+
+      .nav > i {
+        position: absolute;
+        right: 2vh;
+        top: 2vh;
+        font-weight: bold;
+      }
+
+      .main .top {
+        height: 195vh;
+        width: 100%;
+        background-color: white;
+      }
+
+      .top .first {
+        height: 95vh;
+        width: 100%;
+        /* background-color: #f00404; */
+        position: relative;
+      }
+
+      .top .first .bgbox {
+        height: 70vh;
+        width: 40vw;
+        background-color: rgb(27, 27, 80);
+        position: absolute;
+        top: 10vh;
+        right: 3vw;
+      }
+
+      .top .first img {
+        height: 100vh;
+        width: 50vw;
+        object-fit: cover;
+        position: absolute;
+        top: 18vh;
+        right: 8vw;
+        z-index: 1;
+      }
+
+      .top .first .textbox {
+        height: 50vh;
+        width: 35vw;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: 5vh;
+        left: 3vw;
+      }
+
+      .textbox > h1 {
+        margin: 5vh 0 1vh 4vh;
+        font-size: 8vh;
+      }
+
+      .textbox > p {
+        margin: 3vh 0 1vh 4vh;
+        padding: 0vh 4vw 1vh 0vw;
+        text-align: justify;
+      }
+
+      .textbox > h3 {
+        height: 5vh;
+        width: 20vw;
+        border: 2px solid rgb(42, 42, 97);
+        border-radius: 15px;
+        padding: 0vh 7vw 1vh 7vw;
+        margin: 3vh 0 1vh 4vh;
+        background-color: rgb(42, 42, 97);
+        color: white;
+      }
+
+      .top .second {
+        height: 100vh;
+        width: 100%;
+        /* background-color: #2dca0e; */
+        position: relative;
+      }
+
+      .top .second .pinkbox1 {
+        height: 35vh;
+        width: 70vw;
+        background-color: pink;
+        position: absolute;
+        right: 0px;
+        top: 5vw;
+      }
+
+      .second > p {
+        position: absolute;
+        top: 25vh;
+        left: 10vw;
+      }
+
+      .second > h1 {
+        position: absolute;
+        font-size: 10vh;
+        bottom: 30vh;
+        left: 20vw;
+      }
+
+      .second .pinkbox2 {
+        height: 30vh;
+        width: 15vw;
+        background-color: pink;
+        position: absolute;
+        left: 8vw;
+        bottom: -5vw;
+        text-align: center;
+        z-index: 1;
+      }
+
+      .pinkbox2 i {
+        font-size: 12vh;
+        margin: 3vh 0vw 5vh 0vw;
+      }
+
+      .pinkbox2 P {
+        font-weight: bold;
+      }
+
+      .second .pinkbox3 {
+        height: 30vh;
+        width: 15vw;
+        background-color: pink;
+        position: absolute;
+        left: 31vw;
+        bottom: -5vw;
+        text-align: center;
+        z-index: 1;
+      }
+
+      .pinkbox3 i {
+        font-size: 12vh;
+        margin: 3vh 0vw 5vh 0vw;
+      }
+
+      .pinkbox3 P {
+        font-weight: bold;
+      }
+
+      .second .pinkbox4 {
+        height: 30vh;
+        width: 15vw;
+        background-color: pink;
+        position: absolute;
+        right: 31vw;
+        bottom: -5vw;
+        text-align: center;
+        z-index: 1;
+      }
+
+      .pinkbox4 i {
+        font-size: 12vh;
+        margin: 3vh 0vw 5vh 0vw;
+      }
+
+      .pinkbox4 P {
+        font-weight: bold;
+      }
+
+      .second .pinkbox5 {
+        height: 30vh;
+        width: 15vw;
+        background-color: pink;
+        position: absolute;
+        right: 8vw;
+        bottom: -5vw;
+        text-align: center;
+        z-index: 1;
+      }
+
+      .pinkbox5 i {
+        font-size: 12vh;
+        margin: 3vh 0vw 5vh 0vw;
+      }
+
+      .pinkbox5 P {
+        font-weight: bold;
+      }
+
+      .main .down {
+        height: 200vh;
+        width: 100%;
+        /* background-color: navy; */
+        z-index: -1;
+        color: #fff;
+      }
+
+      .down .first {
+        height: 120vh;
+        width: 100%;
+        background-color: #034078;
+        position: relative;
+      }
+
+      .down .first .left {
+        height: 70vh;
+        width: 42.5vw;
+        /* background-color: mediumspringgreen; */
+        position: absolute;
+        top: 25vh;
+        left: 5vw;
+        text-align: center;
+      }
+
+      .down .first .left > h1 {
+        font-size: 6vh;
+        padding: 2vh 0 0 4vh;
+      }
+
+      .down .first .left > p {
+        font-size: 18px;
+        padding: 2vh 5vh 5vh 4vh;
+        text-align: justify;
+      }
+
+      .down .first .left > ul {
+        font-size: 23px;
+        padding: 2vh 7vh 5vh 7vh;
+        text-align: justify;
+      }
+
+      .down .first .right {
+        height: 70vh;
+        width: 42.5vw;
+        /* background-color: mediumspringgreen; */
+        position: absolute;
+        top: 25vh;
+        right: 5vw;
+      }
+
+      .down .first .right {
+        font-size: 23px;
+        padding: 2vh 5vh 5vh 4vh;
+        text-align: justify;
+      }
+
+      .down .second {
+        height: 80vh;
+        width: 100%;
+        background-color: #034078;
+        position: relative;
+      }
+
+      .down .second > img {
+        width: 60vw;
+        height: 100vh;
+        position: absolute;
+        top: -5vh;
+        right: 10vw;
+        z-index: 1;
+      }
+
+      .last {
+        height: 70vh;
+        width: 100%;
+        position: relative;
+      }
+
+      .last .last_pink {
+        height: 50vh;
+        width: 70vw;
+        background-color: pink;
+        position: absolute;
+        top: -20vh;
+        right: 5vw;
+        z-index: 0;
+      }
+
+      .last > .whitebox {
+        /* border: 1px solid black; */
+        z-index: 1;
+        height: 70vh;
+        width: 40vw;
+        position: absolute;
+        top: -7vh;
+        left: 5vw;
+        background-color: #fff;
+        text-align: center;
+      }
+
+      .whitebox > h1 {
+        font-size: 7vh;
+        margin: 7vh 4vw 7vh 4vw;
+        text-align: left;
+      }
+
+      .whitebox > p {
+        margin: 3vh 4vw 4vh 4vw;
+        text-align: left;
+      }
+
+      .whitebox > h5 {
+        font-size: 2vh;
+        height: 6vh;
+        width: 20vw;
+        border: 2px solid rgb(42, 42, 97);
+        border-radius: 15px;
+        padding: 2vh 6vw 1vh 6vw;
+        margin: 3vh 0 1vh 9vw;
+        background-color: rgb(42, 42, 97);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <h1>Logo</h1>
+
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="top">
+        <div class="first">
+          <div class="bgbox"></div>
+          <img src="./calling boy.jpg" alt="" />
+          <div class="textbox">
+            <h1>THERAPY CENTER</h1>
+            <p>
+              herapy sessions provide a safe and supportive space to express
+              emotions, understand personal challenges, and develop healthier
+              coping strategies. They encourage self-awareness, emotional
+              healing,
+            </p>
+            <h3>Join</h3>
+          </div>
+        </div>
+        <div class="second">
+          <div class="pinkbox1"></div>
+          <p>Emotional Support</p>
+
+          <h1>Group Therapy & workshop</h1>
+          <div class="pinkbox2">
+            <i class="fa-solid fa-earth-americas"></i>
+            <p>individual therepy</p>
+          </div>
+          <div class="pinkbox3">
+            <i class="fa-solid fa-circle-user"></i>
+            <p>Child Therepy</p>
+          </div>
+          <div class="pinkbox4">
+            <i class="fa-solid fa-recycle"></i>
+            <p>Camp Therepy</p>
+          </div>
+          <div class="pinkbox5">
+            <i class="fa-solid fa-people-roof"></i>
+            <p>family Therepy</p>
+          </div>
+        </div>
+      </div>
+      <div class="down">
+        <div class="first">
+          <div class="left">
+            <h1>Workshop</h1>
+            <p>
+              Therapy sessions provide a safe and supportive environment where
+              individuals can express their thoughts and emotions freely. They
+              help improve mental well-being, build confidence, and develop
+              healthy coping strategies.
+            </p>
+
+            <ul>
+              <li>
+                Share your feelings without fear of judgment and receive
+                compassionate guidance from experienced professionals.
+              </li>
+              <li>
+                Learn practical techniques to manage stress, overcome
+                challenges, and develop a healthier mindset.
+              </li>
+              <li>
+                Every session is private, respectful, and focused on helping you
+                achieve lasting emotional wellness
+              </li>
+            </ul>
+          </div>
+
+          <div class="right">
+            <p>
+              Therapy sessions are designed to help individuals understand their
+              emotions, improve their mental well-being, and navigate life's
+              challenges with confidence. Through open conversations and
+              personalized guidance, therapists provide practical strategies for
+              managing stress, anxiety, and personal difficulties. Each session
+              is conducted in a safe, confidential, and supportive environment
+              where clients feel heard and respected. The goal is to encourage
+              emotional growth, strengthen resilience, and promote healthier
+              relationships. With consistent support, therapy can lead to a
+              happier, more balanced, and fulfilling life.
+            </p>
+          </div>
+        </div>
+        <div class="second">
+          <img src="./cdc-SAwxJ8PHY3Q-unsplash.jpg" alt="family image" />
+        </div>
+      </div>
+
+      <div class="last">
+        <div class="last_pink"></div>
+
+        <div class="whitebox">
+          <h1>Couples and Family Therapy</h1>
+          <p>
+            Couples and Family Therapy helps improve communication, resolve
+            conflicts, and strengthen relationships between partners and family
+            members.
+          </p>
+
+          <p>supportive environment</p>
+
+          <h5>Contact Us</h5>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
